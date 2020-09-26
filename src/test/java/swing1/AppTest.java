@@ -77,7 +77,7 @@ public class AppTest {
     @Test public void testPasswordCheckerAnotherCase3() {
         char[] wrongPassword = {'f','f','d','d','g'};
         this.StartScreen.password.passwordChecker(wrongPassword);
-        assertTrue(this.StartScreen.password.isVisible);
+        assertFalse(this.StartScreen.password.isVisible);
     }
 }
 
